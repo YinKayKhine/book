@@ -17,20 +17,16 @@
     <body class="skin-blue">
         <div class="wrapper">
             <!-- Header -->
-            @include('layouts.header')
+            @include('admin.layouts.header')
 
             <!-- Sidebar -->
-            @include('layouts.sidebar')
+            @include('admin.layouts.sidebar')
             <div id='app'></div>
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>
-                        {{ "Page Title" }}
-                        <small>{{  null }}</small>
-                    </h1>
                     <!-- You can dynamically generate breadcrumbs here -->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -46,7 +42,7 @@
             </div><!-- /.content-wrapper -->
 
             <!-- Footer -->
-            @include('layouts.footer')
+            @include('admin.layouts.footer')
 
         </div><!-- ./wrapper -->
         <script src="{{ asset('js/app.js') }}" defer></script>
